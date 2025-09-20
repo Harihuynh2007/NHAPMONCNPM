@@ -156,7 +156,7 @@ sequenceDiagram
     UI -->> User: Hiển thị thông báo
 
 ```
-2.2 Đăng nhập
+### ## 2.2 Đăng nhập
 ```mermaid
 Sao chép mã
 sequenceDiagram
@@ -171,10 +171,11 @@ sequenceDiagram
     DB -->> Auth: Trả kết quả
     Auth -->> UI: Thông báo kết quả
     UI -->> User: Hiển thị kết quả
+
 ```
-2.3 Tạo bảng
+
+### ## 2.3 Tạo bảng
 ```mermaid
-Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -188,9 +189,8 @@ sequenceDiagram
     Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị bảng mới
 ```
-2.4 Tạo danh sách
+### ## 2.4 Tạo danh sách
 ```mermaid
-Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -204,7 +204,7 @@ sequenceDiagram
     Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị danh sách mới
 ```
-2.5 Tạo thẻ
+### ## 2.5 Tạo thẻ
 ```mermaid
 Sao chép mã
 sequenceDiagram
@@ -220,7 +220,7 @@ sequenceDiagram
     Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị thẻ mới
 ```
-2.6 Thêm thành viên
+### ## 2.6 Thêm thành viên
 ```mermaid
 Sao chép mã
 sequenceDiagram
