@@ -206,7 +206,6 @@ sequenceDiagram
 ```
 ### ## 2.5 Tạo thẻ
 ```mermaid
-Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -222,7 +221,6 @@ sequenceDiagram
 ```
 ### ## 2.6 Thêm thành viên
 ```mermaid
-Sao chép mã
 sequenceDiagram
     actor Admin as Chủ bảng
     participant UI as Giao diện
