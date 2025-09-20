@@ -140,7 +140,7 @@ Sơ đồ use case tổng quát cho hệ thống:
 
 ## 2. Sequence Diagram
 
-### 2.1 Đăng ký
+### ## 2.1 Đăng ký
 ```mermaid
 sequenceDiagram
     actor User
@@ -149,21 +149,16 @@ sequenceDiagram
     participant DB as CSDL
 
     User ->> UI: Chọn "Đăng ký"
-    UI ->> User: Hiển thị form đăng ký
-    User ->> UI: Nhập thông tin
     UI ->> Sys: Gửi thông tin đăng ký
     Sys ->> DB: Kiểm tra email
     DB -->> Sys: Trả kết quả
-    alt Email hợp lệ
-        Sys ->> DB: Lưu tài khoản
-        DB -->> Sys: Xác nhận
-        Sys -->> UI: Đăng ký thành công
-        UI -->> User: Thông báo thành công
-    else Email đã tồn tại
-        Sys -->> UI: Báo lỗi
-        UI -->> User: Nhập lại
-    end
+    Sys -->> UI: Thông báo kết quả
+    UI -->> User: Hiển thị thông báo
 
+```
+2.2 Đăng nhập
+```mermaid
+Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -174,14 +169,12 @@ sequenceDiagram
     UI ->> Auth: Gửi thông tin đăng nhập
     Auth ->> DB: Kiểm tra dữ liệu
     DB -->> Auth: Trả kết quả
-    alt Thành công
-        Auth -->> UI: Xác thực OK
-        UI -->> User: Truy cập hệ thống
-    else Thất bại
-        Auth -->> UI: Báo lỗi
-        UI -->> User: Yêu cầu nhập lại
-    end
-
+    Auth -->> UI: Thông báo kết quả
+    UI -->> User: Hiển thị kết quả
+```
+2.3 Tạo bảng
+```mermaid
+Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -189,14 +182,15 @@ sequenceDiagram
     participant DB as CSDL
 
     User ->> UI: Chọn "Tạo bảng"
-    UI ->> User: Hiển thị form nhập tên bảng
-    User ->> UI: Nhập thông tin
     UI ->> Sys: Gửi yêu cầu tạo bảng
     Sys ->> DB: Lưu bảng mới
     DB -->> Sys: Xác nhận
-    Sys -->> UI: Tạo thành công
+    Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị bảng mới
-
+```
+2.4 Tạo danh sách
+```mermaid
+Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -204,14 +198,15 @@ sequenceDiagram
     participant DB as CSDL
 
     User ->> UI: Chọn "Tạo danh sách"
-    UI ->> User: Hiển thị form nhập tên danh sách
-    User ->> UI: Nhập thông tin
     UI ->> Sys: Gửi yêu cầu tạo danh sách
     Sys ->> DB: Lưu danh sách mới
     DB -->> Sys: Xác nhận
-    Sys -->> UI: Tạo thành công
+    Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị danh sách mới
-
+```
+2.5 Tạo thẻ
+```mermaid
+Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
@@ -219,14 +214,15 @@ sequenceDiagram
     participant DB as CSDL
 
     User ->> UI: Chọn "Tạo thẻ"
-    UI ->> User: Hiển thị form nhập thông tin thẻ
-    User ->> UI: Nhập dữ liệu
     UI ->> Sys: Gửi yêu cầu tạo thẻ
     Sys ->> DB: Lưu thẻ mới
     DB -->> Sys: Xác nhận
-    Sys -->> UI: Tạo thành công
+    Sys -->> UI: Phản hồi kết quả
     UI -->> User: Hiển thị thẻ mới
-
+```
+2.6 Thêm thành viên
+```mermaid
+Sao chép mã
 sequenceDiagram
     actor Admin as Chủ bảng
     participant UI as Giao diện
@@ -234,17 +230,11 @@ sequenceDiagram
     participant DB as CSDL
 
     Admin ->> UI: Chọn "Thêm thành viên"
-    UI ->> Admin: Hiển thị form nhập email
-    Admin ->> UI: Nhập email
-    UI ->> Sys: Gửi yêu cầu thêm
+    UI ->> Sys: Gửi email thành viên
     Sys ->> DB: Kiểm tra email
     DB -->> Sys: Trả kết quả
-    alt Email tồn tại
-        Sys ->> DB: Thêm vào bảng
-        DB -->> Sys: Xác nhận
-        Sys -->> UI: Thêm thành công
-        UI -->> Admin: Hiển thị danh sách mới
-    else Email không tồn tại
-        Sys -->> UI: Báo lỗi
-        UI -->> Admin: Thông báo lỗi
-    end
+    Sys ->> DB: Thêm thành viên (nếu hợp lệ)
+    DB -->> Sys: Xác nhận
+    Sys -->> UI: Phản hồi kết quả
+    UI -->> Admin: Hiển thị danh sách thành viên
+```
