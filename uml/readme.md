@@ -158,7 +158,6 @@ sequenceDiagram
 ```
 ### ## 2.2 Đăng nhập
 ```mermaid
-Sao chép mã
 sequenceDiagram
     actor User
     participant UI as Giao diện
