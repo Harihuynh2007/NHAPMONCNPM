@@ -7,10 +7,9 @@ Mục tiêu dự án: áp dụng kiến thức **fullstack web** để xây dự
 ---
 
 ## 👥 Thành viên nhóm
-- Huỳnh Minh Hải – Leader, Backend Developer  
+- Huỳnh Minh Hải – Leader, Backend Developer, ux/ui  
 - Nguyễn Bá Bảo Nam – Frontend Developer  
-- [Thành viên 3] – Tester  
-- [Thành viên 4] – UI/UX Designer  
+
 
 ---
 
@@ -40,8 +39,8 @@ Mục tiêu dự án: áp dụng kiến thức **fullstack web** để xây dự
 ---
 
 ## 📐 Thiết kế hệ thống
-- **Use Case Diagram**: ![Use Case](./docs/usecase.png)  
-- **Sequence Diagram**: ![Sequence](./docs/sequence.png)  
+- **Use Case Diagram**: [Xem chi tiết tại đây](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/uml/readme.md#lab-03--uml-thi%E1%BA%BFt-k%E1%BA%BF-use-case--sequence-diagram)
+- **Sequence Diagram**: [Xem chi tiết tại đây](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/uml/readme.md#2-sequence-diagram)
 - **ERD (Entity Relationship Diagram)**: ![ERD](./docs/erd.png)  
 
 ---
