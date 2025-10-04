@@ -45,7 +45,7 @@ Mục tiêu dự án: áp dụng kiến thức **fullstack web** để xây dự
 ## 📐 Thiết kế hệ thống
 - **Use Case Diagram**: [Xem chi tiết tại đây](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/lab02-usecase/usecaseimage.png)
 - **Sequence Diagram**: [Xem chi tiết tại đây](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/lab03-uml/readme.md#2-sequence-diagram)
-- **ERD (Entity Relationship Diagram)**: [![ERD](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/uml/ERD.png) 
+- **ERD (Entity Relationship Diagram)**: [![ERD](https://github.com/Harihuynh2007/NHAPMONCNPM/blob/main/lab03-uml/ERD.png) 
 
 ---
 
