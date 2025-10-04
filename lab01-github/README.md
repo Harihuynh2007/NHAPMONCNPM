@@ -33,12 +33,19 @@ Mục tiêu dự án: áp dụng kiến thức **fullstack web** để xây dự
 ---
 
 ## 🎯 Use Case chính
-- Quản lý người dùng (đăng ký, đăng nhập, phân quyền).  
-- Quản lý board, danh sách, thẻ (Kanban).  
-- Hỗ trợ cộng tác (thành viên, bình luận, thông báo).  
-- Báo cáo & phân tích tiến độ.  
+1. **Quản lý người dùng**
+   - Đăng ký, đăng nhập, đăng xuất, phân quyền, chỉnh sửa thông tin.
+2. **Quản lý bảng công việc (Board)**
+   - Tạo, sửa, xoá bảng; chia sẻ và phân quyền thành viên.
+3. **Quản lý danh sách (List)**
+   - Thêm, sửa, xoá danh sách trong từng bảng.
+4. **Quản lý thẻ công việc (Card)**
+   - Tạo, chỉnh sửa, xoá thẻ; gán người phụ trách, thêm nhãn, bình luận.
+5. **Cộng tác & Thông báo**
+   - Thành viên tương tác qua bình luận, nhận thông báo thay đổi.
+6. **Báo cáo & Phân tích tiến độ**
+   - Thống kê và theo dõi tiến độ dự án theo thời gian thực.
 
-*(Sơ đồ use case có thể chèn hình ảnh vào đây)*
 
 ---
 
