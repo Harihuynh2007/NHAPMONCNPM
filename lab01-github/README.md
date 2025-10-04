@@ -1,4 +1,4 @@
-# 🛠️LAB01:  Software Engineering Project – TaskNest
+<img width="621" height="194" alt="image" src="https://github.com/user-attachments/assets/62ecacc6-607c-4a4a-b774-2d7b35b0f8a4" /># 🛠️LAB01:  Software Engineering Project – TaskNest
 
 ## 📌 Giới thiệu
 **TaskNest** là một hệ thống quản lý công việc nhóm theo mô hình **Kanban**, được phát triển trong môn *Nhập môn Công nghệ Phần mềm*.  
@@ -7,8 +7,12 @@ Mục tiêu dự án: áp dụng kiến thức **fullstack web** để xây dự
 ---
 
 ## 👥 Thành viên nhóm
-- Huỳnh Minh Hải – Leader, Backend Developer, ux/ui  
-- Nguyễn Bá Bảo Nam – Frontend Developer  
+
+| Thành viên | Vai trò | Liên kết cá nhân |
+|-------------|----------|------------------|
+| **Huỳnh Minh Hải** | 🧠 Leader · Backend Developer · UI/UX Designer | [🌐 harihuynh2007.github.io](https://harihuynh2007.github.io) |
+| **Nguyễn Bá Bảo Nam** | 💻 Frontend Developer | — |
+
 
 
 ---
